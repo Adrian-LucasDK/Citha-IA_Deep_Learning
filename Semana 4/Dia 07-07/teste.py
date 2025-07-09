@@ -2,8 +2,8 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # Silencia logs informativos do TensorFlow
 
 import numpy as np
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Input
+from tensorflow.keras.models import Sequential # type: ignore
+from tensorflow.keras.layers import Dense, Input # type: ignore
 
 # Dados simulados: temperatura em °C, nível de poluição (0 a 100)
 # Saída: 0 = dia bom, 1 = dia ruim
